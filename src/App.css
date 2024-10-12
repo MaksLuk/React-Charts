@@ -1,0 +1,55 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.tab-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.content {
+  margin-top: 50px;
+  padding: 20px;
+  top: 15px;
+  padding-bottom: 150px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab.active {
+  border-bottom: none;
+  background-color: #fff;
+}
+
+.chart-title {
+  float: left;
+}
+
+.create-chart-button {
+  margin-left: 50px;
+  margin-top: 18px;
+}
+
+.chart-container {
+  padding: 20px;
+}
+
+.li-with-chart {
+  display: flex;
+}
+
+.h1 {
+  clear: both;
+  padding-top: 10px;
+}
