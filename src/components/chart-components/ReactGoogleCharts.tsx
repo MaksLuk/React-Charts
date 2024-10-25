@@ -7,6 +7,10 @@ const lineOptions = {
   hAxis: { title: 'Time' },
   vAxis: { title: 'Popularity' },
   legend: 'none',
+  animation: {
+    duration: 1000,
+    easing: "out",
+  }
 };
 
 const areaOptions = {
@@ -14,24 +18,41 @@ const areaOptions = {
   hAxis: { title: 'Title' },
   vAxis: { minValue: 0 },
   chartArea: { width: '70%', height: '80%' },
+  animation: {
+    duration: 1000,
+    easing: "out",
+  }
 };
 
 const columnOptions = {
   title: 'Column Chart Example',
+  animation: {
+    duration: 1000,
+    easing: "out",
+  }
 };
 
 const pieOptions = {
   title: 'Pie Chart Example',
+  is3D: true,
 };
 
 const histogramOptions = {
   title: 'Histogram Chart Example',
+  animation: {
+    duration: 1000,
+    easing: "out",
+  }
 };
 
 const scatterOptions = {
   title: 'Scatter Chart Example',
   curveType: 'function',
-  legend: { position: 'bottom' }
+  legend: { position: 'bottom' },
+  animation: {
+    duration: 1000,
+    easing: "out",
+  }
 };
 
 function ReactGoogleCharts() {
@@ -126,7 +147,7 @@ function ReactGoogleCharts() {
 
           <div className='chart-container' style={{ clear: 'both', float: 'left' }}>
             <div className='chart-header'>
-              <h2 className='chart-title'>Диаграмма площади (Area chart)</h2>
+              <h2 className='chart-title'>Круговая диаграмма (Pie chart)</h2>
               <button className='create-chart-button' onClick={handlePieChartButtonClick}>Создать</button>
             </div>
             <Chart
